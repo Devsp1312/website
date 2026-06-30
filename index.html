@@ -6,7 +6,7 @@
     <title>Home & Pet Sitting</title>
     <meta
       name="description"
-      content="Reliable pet sitting, house sitting, home checks, plant care, mail pickup, and overnight stays."
+      content="Friendly, reliable pet sitting, house sitting, home checks, plant care, mail pickup, and overnight stays."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="ambient" aria-hidden="true">
-      <span class="orb orb-a"></span>
-      <span class="orb orb-b"></span>
-      <span class="orb orb-c"></span>
-      <span class="grid-glow"></span>
-    </div>
-
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Home & Pet Sitting home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" role="img">
+          <svg viewBox="0 0 48 48">
             <path d="M8 23.5 24 10l16 13.5v17a2 2 0 0 1-2 2h-8v-12H18v12h-8a2 2 0 0 1-2-2z"></path>
             <path d="M19 21.5c1.8-3.2 8.2-3.2 10 0 2 3.7-1.3 8.4-5 10.6-3.7-2.2-7-6.9-5-10.6z"></path>
           </svg>
@@ -37,6 +30,7 @@
       <nav class="nav-links" aria-label="Site sections">
         <a href="#services">Services</a>
         <a href="#process">How it works</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="header-cta" href="#contact">Get in touch</a>
@@ -44,26 +38,43 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
+        <figure class="hero-media" aria-hidden="true">
+          <img src="assets/hero-home-pets.png" alt="">
+        </figure>
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Reliable local care, crafted around your routine</p>
           <h1 id="hero-title">Peace of mind for your home and pets.</h1>
           <p>
-            I care for your pets and home like my own, with dependable visits,
-            overnight stays, and thoughtful updates while you are away.
+            Thoughtful pet sitting and home care with familiar routines,
+            helpful updates, and a calm return home.
           </p>
-          <div class="hero-metrics" aria-label="Service highlights">
-            <p><strong>365</strong><span>Days of care planning</span></p>
-            <p><strong>24h</strong><span>Typical message response</span></p>
-            <p><strong>100%</strong><span>Routine-first approach</span></p>
-          </div>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Get in touch</a>
+            <a class="button primary" href="#contact">
+              <span>Get in touch</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
             <a class="button secondary" href="#services">See services</a>
           </div>
+          <div class="trust-row" aria-label="Trust highlights">
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.4-2.9 8.3-7 10-4.1-1.7-7-5.6-7-10V6l7-3z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></svg>
+              Reliable care
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H8l-4 4V5z"></path><path d="M8 9h8M8 12h5"></path></svg>
+              Clear updates
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5.5 10v10h13V10"></path><path d="M10 20v-6h4v6"></path></svg>
+              Home routines
+            </span>
+          </div>
         </div>
-        <figure class="hero-media" data-reveal>
-          <img src="assets/hero-home-pets.png" alt="A dog and cat relaxing in a bright home entryway with pet and plant care items nearby.">
-        </figure>
+        <aside class="care-note" data-reveal aria-label="Example care update">
+          <span class="note-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8.7 10.3c.7 0 1.3-.8 1.3-1.8S9.4 6.7 8.7 6.7 7.4 7.5 7.4 8.5s.6 1.8 1.3 1.8zM15.3 10.3c.7 0 1.3-.8 1.3-1.8s-.6-1.8-1.3-1.8S14 7.5 14 8.5s.6 1.8 1.3 1.8zM6.2 14c.8 0 1.4-.7 1.4-1.6s-.6-1.6-1.4-1.6-1.4.7-1.4 1.6S5.4 14 6.2 14zM17.8 14c.8 0 1.4-.7 1.4-1.6s-.6-1.6-1.4-1.6-1.4.7-1.4 1.6.6 1.6 1.4 1.6z"></path><path d="M8.2 17.2c0-2 1.7-3.7 3.8-3.7s3.8 1.7 3.8 3.7c0 1.2-.8 2-1.9 1.8-.6-.1-1.2-.3-1.9-.3s-1.3.2-1.9.3c-1.1.2-1.9-.6-1.9-1.8z"></path></svg>
+          </span>
+          <p><strong>Luna had dinner and a happy walk.</strong><span>Today, 6:30 PM</span></p>
+        </aside>
       </section>
 
       <section class="services section-shell" id="services" aria-labelledby="services-title">
@@ -73,24 +84,36 @@
         </div>
         <div class="service-grid">
           <article class="service-card" data-reveal>
-            <span class="service-icon" aria-hidden="true">🐾</span>
+            <span class="service-icon lavender" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8.7 10.3c.7 0 1.3-.8 1.3-1.8S9.4 6.7 8.7 6.7 7.4 7.5 7.4 8.5s.6 1.8 1.3 1.8zM15.3 10.3c.7 0 1.3-.8 1.3-1.8s-.6-1.8-1.3-1.8S14 7.5 14 8.5s.6 1.8 1.3 1.8zM6.2 14c.8 0 1.4-.7 1.4-1.6s-.6-1.6-1.4-1.6-1.4.7-1.4 1.6S5.4 14 6.2 14zM17.8 14c.8 0 1.4-.7 1.4-1.6s-.6-1.6-1.4-1.6-1.4.7-1.4 1.6.6 1.6 1.4 1.6z"></path><path d="M8.2 17.2c0-2 1.7-3.7 3.8-3.7s3.8 1.7 3.8 3.7c0 1.2-.8 2-1.9 1.8-.6-.1-1.2-.3-1.9-.3s-1.3.2-1.9.3c-1.1.2-1.9-.6-1.9-1.8z"></path></svg>
+            </span>
             <h3>Pet care</h3>
             <p>Feeding, walks, playtime, litter boxes, medication reminders, and plenty of attention.</p>
+            <a href="#contact">Ask about pet care</a>
           </article>
           <article class="service-card" data-reveal>
-            <span class="service-icon" aria-hidden="true">✉</span>
+            <span class="service-icon sage" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16v11H4z"></path><path d="m4 8 8 6 8-6"></path></svg>
+            </span>
             <h3>Mail & plants</h3>
             <p>Mail pickup, package check-ins, watering plants, and keeping everyday things tidy.</p>
+            <a href="#contact">Cover the basics</a>
           </article>
           <article class="service-card" data-reveal>
-            <span class="service-icon" aria-hidden="true">⌂</span>
+            <span class="service-icon sky" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5.5 10v10h13V10"></path><path d="M10 20v-6h4v6"></path></svg>
+            </span>
             <h3>Home checks</h3>
             <p>Lights, locks, thermostats, basic security checks, and quick notes after each visit.</p>
+            <a href="#contact">Plan check-ins</a>
           </article>
           <article class="service-card" data-reveal>
-            <span class="service-icon" aria-hidden="true">☾</span>
+            <span class="service-icon moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M19 15.7A8 8 0 0 1 8.3 5a8 8 0 1 0 10.7 10.7z"></path><path d="M16.5 4.5v3M15 6h3"></path></svg>
+            </span>
             <h3>Overnight stays</h3>
             <p>I stay in your home so pets keep their routine and your house feels lived in.</p>
+            <a href="#contact">Book overnights</a>
           </article>
         </div>
       </section>
@@ -100,8 +123,8 @@
           <div class="trust-copy" data-reveal>
             <h2 id="process-title">A trusted sitter, a simple process.</h2>
             <p>
-              Clear communication, respectful care, and a calm plan before you
-              leave. You will know what is happening at home without needing to ask.
+              A calm plan before you leave, kind care while you are away,
+              and a happy return home.
             </p>
             <ul class="trust-list">
               <li>Local, reliable, and easy to reach</li>
@@ -109,67 +132,84 @@
               <li>Care notes followed exactly</li>
             </ul>
           </div>
-          <ol class="steps" data-reveal>
+          <ol class="steps">
             <li data-reveal>
               <span>1</span>
-              <div>
-                <h3>Get in touch</h3>
-                <p>Send a few details about your dates, pets, and home-care needs.</p>
-              </div>
+              <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4V5z"></path><path d="M8 9h8M8 12h5"></path></svg></div>
+              <h3>Get in touch</h3>
+              <p>Send your dates, pets, and home-care needs.</p>
             </li>
             <li data-reveal>
               <span>2</span>
-              <div>
-                <h3>Meet & plan</h3>
-                <p>We will go over routines, keys, feeding, medicine, and house details.</p>
-              </div>
+              <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v4H7z"></path><path d="M6 5H5a2 2 0 0 0-2 2v12h18V7a2 2 0 0 0-2-2h-1"></path><path d="m8 13 2 2 5-5"></path></svg></div>
+              <h3>Meet & plan</h3>
+              <p>We go over keys, feeding, meds, and routines.</p>
             </li>
             <li data-reveal>
               <span>3</span>
-              <div>
-                <h3>Care & updates</h3>
-                <p>I look after pets and home, then send helpful updates while you are away.</p>
-              </div>
+              <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"></path></svg></div>
+              <h3>Care & updates</h3>
+              <p>Pets and home are cared for, with helpful notes.</p>
             </li>
             <li data-reveal>
               <span>4</span>
-              <div>
-                <h3>Return relaxed</h3>
-                <p>Come home to happy pets and a house that has been cared for.</p>
-              </div>
+              <div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5.5 10v10h13V10"></path><path d="M10 20v-6h4v6"></path></svg></div>
+              <h3>Return relaxed</h3>
+              <p>Come home to happy pets and a cared-for home.</p>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="voices section-shell" aria-labelledby="voices-title">
+      <section class="reviews section-shell" id="reviews" aria-labelledby="reviews-title">
         <div class="section-heading" data-reveal>
-          <h2 id="voices-title">What clients notice most</h2>
-          <p>Small details handled well, so every trip feels easier.</p>
+          <h2 id="reviews-title">What pet parents say</h2>
+          <p>Friendly care shows up in the little details.</p>
         </div>
-        <div class="voice-grid">
-          <article class="voice-card" data-reveal>
-            <p>"Our anxious rescue settled quickly because routines were followed exactly. We could finally travel without stress."</p>
-            <span>Routine-focused support</span>
+        <div class="review-grid">
+          <article class="review-card" data-reveal>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>We came home to a happy cat and spotless home. The updates gave us so much peace of mind.</p>
+            <div>
+              <strong>Megan R.</strong>
+              <span>Weekend visit care</span>
+            </div>
           </article>
-          <article class="voice-card" data-reveal>
-            <p>"Updates were clear, short, and helpful. We always knew our pets were okay and the house was in great shape."</p>
-            <span>Clear communication</span>
+          <article class="review-card featured" data-reveal>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>Reliable, kind, and detail-oriented. Our dog loved the walks and overnight company.</p>
+            <div>
+              <strong>James T.</strong>
+              <span>Overnight stay</span>
+            </div>
           </article>
-          <article class="voice-card" data-reveal>
-            <p>"Walks, meds, and home checks were all done on schedule. Coming home felt calm and organized."</p>
-            <span>Dependable consistency</span>
+          <article class="review-card" data-reveal>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>I trusted her completely with my home and plants. Everything was perfect when we got back.</p>
+            <div>
+              <strong>Alicia S.</strong>
+              <span>Home check-ins</span>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
         <div class="contact-details" data-reveal>
-          <h2 id="contact-title">Let’s connect.</h2>
+          <h2 id="contact-title">Let's connect.</h2>
           <p>I would love to learn how I can help.</p>
-          <a href="mailto:hello@homepetsitting.com">hello@homepetsitting.com</a>
-          <a href="tel:+15551234567">(555) 123-4567</a>
-          <span>Serving your neighborhood</span>
+          <a href="mailto:hello@homepetsitting.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v11H4z"></path><path d="m4 8 8 6 8-6"></path></svg>
+            hello@homepetsitting.com
+          </a>
+          <a href="tel:+15551234567">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h3l1.5 4-2 1.2a11 11 0 0 0 5.3 5.3l1.2-2 4 1.5v3a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 5 6.2 2 2 0 0 1 7 4z"></path></svg>
+            (555) 123-4567
+          </a>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+            Serving your neighborhood
+          </span>
         </div>
         <form class="contact-form" id="contact-form" data-reveal>
           <label>
@@ -188,16 +228,26 @@
             <span>Tell me about your pets and your needs</span>
             <textarea name="message" rows="5" required></textarea>
           </label>
-          <button class="button primary" type="submit">Send message</button>
+          <button class="button primary" type="submit">
+            <span>Send message</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </button>
           <p class="form-note" id="form-note" role="status">I typically reply within 24 hours.</p>
         </form>
+        <aside class="contact-tip" id="success-card" aria-live="polite">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 3h10v4H7z"></path><path d="M6 5H5a2 2 0 0 0-2 2v12h18V7a2 2 0 0 0-2-2h-1"></path><path d="M8 12h8M8 16h5"></path></svg>
+          </span>
+          <h3>Helpful details</h3>
+          <p>Dates, pet routines, medications, plants, mail, and anything that helps your home feel cared for.</p>
+        </aside>
       </section>
     </main>
 
     <footer class="site-footer">
       <a class="brand" href="#home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" role="img">
+          <svg viewBox="0 0 48 48">
             <path d="M8 23.5 24 10l16 13.5v17a2 2 0 0 1-2 2h-8v-12H18v12h-8a2 2 0 0 1-2-2z"></path>
             <path d="M19 21.5c1.8-3.2 8.2-3.2 10 0 2 3.7-1.3 8.4-5 10.6-3.7-2.2-7-6.9-5-10.6z"></path>
           </svg>
