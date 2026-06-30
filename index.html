@@ -11,12 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+      <span class="grid-glow"></span>
+    </div>
+
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Home & Pet Sitting home">
         <span class="brand-mark" aria-hidden="true">
@@ -37,44 +44,50 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Reliable local care, crafted around your routine</p>
           <h1 id="hero-title">Peace of mind for your home and pets.</h1>
           <p>
             I care for your pets and home like my own, with dependable visits,
             overnight stays, and thoughtful updates while you are away.
           </p>
+          <div class="hero-metrics" aria-label="Service highlights">
+            <p><strong>365</strong><span>Days of care planning</span></p>
+            <p><strong>24h</strong><span>Typical message response</span></p>
+            <p><strong>100%</strong><span>Routine-first approach</span></p>
+          </div>
           <div class="hero-actions">
             <a class="button primary" href="#contact">Get in touch</a>
             <a class="button secondary" href="#services">See services</a>
           </div>
         </div>
-        <figure class="hero-media">
+        <figure class="hero-media" data-reveal>
           <img src="assets/hero-home-pets.png" alt="A dog and cat relaxing in a bright home entryway with pet and plant care items nearby.">
         </figure>
       </section>
 
       <section class="services section-shell" id="services" aria-labelledby="services-title">
-        <div class="section-heading">
+        <div class="section-heading" data-reveal>
           <h2 id="services-title">How I can help</h2>
           <p>Flexible care tailored to your pets, your home, and your routine.</p>
         </div>
         <div class="service-grid">
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <span class="service-icon" aria-hidden="true">🐾</span>
             <h3>Pet care</h3>
             <p>Feeding, walks, playtime, litter boxes, medication reminders, and plenty of attention.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <span class="service-icon" aria-hidden="true">✉</span>
             <h3>Mail & plants</h3>
             <p>Mail pickup, package check-ins, watering plants, and keeping everyday things tidy.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <span class="service-icon" aria-hidden="true">⌂</span>
             <h3>Home checks</h3>
             <p>Lights, locks, thermostats, basic security checks, and quick notes after each visit.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-reveal>
             <span class="service-icon" aria-hidden="true">☾</span>
             <h3>Overnight stays</h3>
             <p>I stay in your home so pets keep their routine and your house feels lived in.</p>
@@ -84,7 +97,7 @@
 
       <section class="process" id="process" aria-labelledby="process-title">
         <div class="process-inner">
-          <div class="trust-copy">
+          <div class="trust-copy" data-reveal>
             <h2 id="process-title">A trusted sitter, a simple process.</h2>
             <p>
               Clear communication, respectful care, and a calm plan before you
@@ -96,29 +109,29 @@
               <li>Care notes followed exactly</li>
             </ul>
           </div>
-          <ol class="steps">
-            <li>
+          <ol class="steps" data-reveal>
+            <li data-reveal>
               <span>1</span>
               <div>
                 <h3>Get in touch</h3>
                 <p>Send a few details about your dates, pets, and home-care needs.</p>
               </div>
             </li>
-            <li>
+            <li data-reveal>
               <span>2</span>
               <div>
                 <h3>Meet & plan</h3>
                 <p>We will go over routines, keys, feeding, medicine, and house details.</p>
               </div>
             </li>
-            <li>
+            <li data-reveal>
               <span>3</span>
               <div>
                 <h3>Care & updates</h3>
                 <p>I look after pets and home, then send helpful updates while you are away.</p>
               </div>
             </li>
-            <li>
+            <li data-reveal>
               <span>4</span>
               <div>
                 <h3>Return relaxed</h3>
@@ -129,15 +142,36 @@
         </div>
       </section>
 
+      <section class="voices section-shell" aria-labelledby="voices-title">
+        <div class="section-heading" data-reveal>
+          <h2 id="voices-title">What clients notice most</h2>
+          <p>Small details handled well, so every trip feels easier.</p>
+        </div>
+        <div class="voice-grid">
+          <article class="voice-card" data-reveal>
+            <p>"Our anxious rescue settled quickly because routines were followed exactly. We could finally travel without stress."</p>
+            <span>Routine-focused support</span>
+          </article>
+          <article class="voice-card" data-reveal>
+            <p>"Updates were clear, short, and helpful. We always knew our pets were okay and the house was in great shape."</p>
+            <span>Clear communication</span>
+          </article>
+          <article class="voice-card" data-reveal>
+            <p>"Walks, meds, and home checks were all done on schedule. Coming home felt calm and organized."</p>
+            <span>Dependable consistency</span>
+          </article>
+        </div>
+      </section>
+
       <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
-        <div class="contact-details">
+        <div class="contact-details" data-reveal>
           <h2 id="contact-title">Let’s connect.</h2>
           <p>I would love to learn how I can help.</p>
           <a href="mailto:hello@homepetsitting.com">hello@homepetsitting.com</a>
           <a href="tel:+15551234567">(555) 123-4567</a>
           <span>Serving your neighborhood</span>
         </div>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" data-reveal>
           <label>
             <span>Name</span>
             <input name="name" type="text" autocomplete="name" required>
