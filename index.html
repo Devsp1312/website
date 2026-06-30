@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home & Pet Sitting</title>
+    <meta
+      name="description"
+      content="Reliable pet sitting, house sitting, home checks, plant care, mail pickup, and overnight stays."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Home & Pet Sitting home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M8 23.5 24 10l16 13.5v17a2 2 0 0 1-2 2h-8v-12H18v12h-8a2 2 0 0 1-2-2z"></path>
+            <path d="M19 21.5c1.8-3.2 8.2-3.2 10 0 2 3.7-1.3 8.4-5 10.6-3.7-2.2-7-6.9-5-10.6z"></path>
+          </svg>
+        </span>
+        <span>Home & Pet Sitting</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Get in touch</a>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Peace of mind for your home and pets.</h1>
+          <p>
+            I care for your pets and home like my own, with dependable visits,
+            overnight stays, and thoughtful updates while you are away.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Get in touch</a>
+            <a class="button secondary" href="#services">See services</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/hero-home-pets.png" alt="A dog and cat relaxing in a bright home entryway with pet and plant care items nearby.">
+        </figure>
+      </section>
+
+      <section class="services section-shell" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <h2 id="services-title">How I can help</h2>
+          <p>Flexible care tailored to your pets, your home, and your routine.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🐾</span>
+            <h3>Pet care</h3>
+            <p>Feeding, walks, playtime, litter boxes, medication reminders, and plenty of attention.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">✉</span>
+            <h3>Mail & plants</h3>
+            <p>Mail pickup, package check-ins, watering plants, and keeping everyday things tidy.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">⌂</span>
+            <h3>Home checks</h3>
+            <p>Lights, locks, thermostats, basic security checks, and quick notes after each visit.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">☾</span>
+            <h3>Overnight stays</h3>
+            <p>I stay in your home so pets keep their routine and your house feels lived in.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="process-inner">
+          <div class="trust-copy">
+            <h2 id="process-title">A trusted sitter, a simple process.</h2>
+            <p>
+              Clear communication, respectful care, and a calm plan before you
+              leave. You will know what is happening at home without needing to ask.
+            </p>
+            <ul class="trust-list">
+              <li>Local, reliable, and easy to reach</li>
+              <li>Daily updates with photos on request</li>
+              <li>Care notes followed exactly</li>
+            </ul>
+          </div>
+          <ol class="steps">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>Get in touch</h3>
+                <p>Send a few details about your dates, pets, and home-care needs.</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>Meet & plan</h3>
+                <p>We will go over routines, keys, feeding, medicine, and house details.</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>Care & updates</h3>
+                <p>I look after pets and home, then send helpful updates while you are away.</p>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <h3>Return relaxed</h3>
+                <p>Come home to happy pets and a house that has been cared for.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-details">
+          <h2 id="contact-title">Let’s connect.</h2>
+          <p>I would love to learn how I can help.</p>
+          <a href="mailto:hello@homepetsitting.com">hello@homepetsitting.com</a>
+          <a href="tel:+15551234567">(555) 123-4567</a>
+          <span>Serving your neighborhood</span>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input name="phone" type="tel" autocomplete="tel">
+          </label>
+          <label class="full">
+            <span>Tell me about your pets and your needs</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send message</button>
+          <p class="form-note" id="form-note" role="status">I typically reply within 24 hours.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M8 23.5 24 10l16 13.5v17a2 2 0 0 1-2 2h-8v-12H18v12h-8a2 2 0 0 1-2-2z"></path>
+            <path d="M19 21.5c1.8-3.2 8.2-3.2 10 0 2 3.7-1.3 8.4-5 10.6-3.7-2.2-7-6.9-5-10.6z"></path>
+          </svg>
+        </span>
+        <span>Home & Pet Sitting</span>
+      </a>
+      <p>&copy; 2026 Home & Pet Sitting. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
